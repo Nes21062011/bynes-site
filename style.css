@@ -1,0 +1,251 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+ 
+  background-color: #fdf6f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+h1, h2 {
+   front-family:'Pacifico' cursive;
+header {
+  background-color: #f4b6c2;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+.products {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f4b6c2;
+  margin-top: 2rem;
+}
+button {
+  background-color: #f4b6c2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e28ca4;
+}
+
+.order-form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form button {
+  margin-top: 10px;
+  background-color: #f4b6c2;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #e28ca4;
+}
+
+.gallery {
+  padding: 2rem;
+  background-color: #fff6f9;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.gallery .item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 1rem;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.gallery button {
+  background-color: #f4b6c2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery button:hover {
+  background-color: #e28ca4;
+}
+.formulaire {
+  background-color: #fff6f9;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin: 2rem;
+}
+
+.formulaire {
+  background-color: #fff0f5;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  max-width: 800px;
+}
+.formulaire h2 {
+  font-family: 'Arial', sans-serif;
+  color: #e28ca4;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.formulaire p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+position: sticky;
+top: 0;
+z-index: 1000;
+.navbar {
+  background-color: #f4b6c2;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #fffaf0;
+}
+
+/* 📱 Responsive - menu hamburger */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    text-align: right;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background-color: #f4b6c2;
+    padding: 1rem 0;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 1rem 0;
+  }
+}
+.item, .card, .gallery-grid .item, form, iframe {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+  transition: transform 0.3s ease;
+}
+.item img {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+iframe {
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
