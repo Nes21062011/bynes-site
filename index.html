@@ -317,6 +317,12 @@
   <section class="merci" id="merci" data-aos="fade-up" data-aos-duration="1000">
     <h2>Merci pour votre commande !</h2>
     <img src="https://i.pinimg.com/originals/b5/04/c5/b504c54911832e95114623857ffe1174.gif" alt="BT21 qui danse">
+    <div style="text-align: center; margin-top: 1rem;">
+  <p>Tu veux partager le site ? Clique ici 👇</p>
+  <button onclick="copierLien()">Copier le lien du site</button>
+  <p id="copie-message" style="color: green; display: none; margin-top: 0.5rem;">Lien copié ! ✅</p>
+</div>
+
   </section>
 
   <footer>
@@ -332,6 +338,17 @@
 
 </html>
 <!-- partial -->
-  
+ <script>
+  function copierLien() {
+    const url = "https://nes21062011.github.io/bynes-site/";
+    navigator.clipboard.writeText(url).then(function() {
+      document.getElementById("copie-message").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("copie-message").style.display = "none";
+      }, 2000);
+    });
+  }
+</script>
+ 
 </body>
 </html>
