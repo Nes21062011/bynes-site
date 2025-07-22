@@ -9,17 +9,7 @@
 <body>
 <!-- partial:index.partial.html -->
 <!DOCTYPE html>
-<div>
-  <a href="index.html">🇫🇷 Français</a> | 
-  <a href="index-en.html">🇬🇧 English</a> | 
-  <a href="index-es.html">🇪🇸 Español</a> | 
-  <a href="index-ja.html">🇯🇵 日本語</a> | 
-  <a href="index-ko.html">🇰🇷 한국어</a> | 
-  <a href="index-zh.html">🇨🇳 中文</a> | 
-  <a href="index-pt.html">🇵🇹 Português</a> | 
-  <a href="index-ar.html">🇸🇦 العربية</a>
-</div>
-
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -291,19 +281,19 @@
         <img src="https://via.placeholder.com/250" alt="T-shirt papillon">
         <h3>T-shirt Papillon</h3>
         <p>15€</p>
-        <button onclick="window.location.href='https://www.instagram.com/bynes6931'">Commander</button>
+        <button onclick="window.location.href='https://www.instagram.com/nesstyle'">Commander</button>
       </div>
       <div class="item">
         <img src="https://via.placeholder.com/250" alt="Hoodie Galaxy">
         <h3>Hoodie Galaxy</h3>
         <p>25€</p>
-        <button onclick="window.location.href='https://www.instagram.com/bynes6931'">Commander</button>
+        <button onclick="window.location.href='https://www.instagram.com/nesstyle'">Commander</button>
       </div>
       <div class="item">
         <img src="https://via.placeholder.com/250" alt="Jean Graffiti">
         <h3>Jean Graffiti</h3>
         <p>20€</p>
-        <button onclick="window.location.href='https://www.instagram.com/bynes6931'">Commander</button>
+        <button onclick="window.location.href='https://www.instagram.com/nesstyle'">Commander</button>
       </div>
     </div>
   </section>
@@ -317,12 +307,6 @@
   <section class="merci" id="merci" data-aos="fade-up" data-aos-duration="1000">
     <h2>Merci pour votre commande !</h2>
     <img src="https://i.pinimg.com/originals/b5/04/c5/b504c54911832e95114623857ffe1174.gif" alt="BT21 qui danse">
-    <div style="text-align: center; margin-top: 1rem;">
-  <p>Tu veux partager le site ? Clique ici 👇</p>
-  <button onclick="copierLien()">Copier le lien du site</button>
-  <p id="copie-message" style="color: green; display: none; margin-top: 0.5rem;">Lien copié ! ✅</p>
-</div>
-
   </section>
 
   <footer>
@@ -338,17 +322,6 @@
 
 </html>
 <!-- partial -->
- <script>
-  function copierLien() {
-    const url = "https://nes21062011.github.io/bynes-site/";
-    navigator.clipboard.writeText(url).then(function() {
-      document.getElementById("copie-message").style.display = "block";
-      setTimeout(() => {
-        document.getElementById("copie-message").style.display = "none";
-      }, 2000);
-    });
-  }
-</script>
- 
+  
 </body>
 </html>
